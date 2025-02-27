@@ -43,12 +43,7 @@ var Cores;
 })(Cores || (Cores = {}));
 let cor = Cores.Verde;
 console.log(cor); // 1
-//Tipos de Função
-//Função com tipo de retorno especificado
-function somar(a, b) {
-    return a + b;
-}
-//Função que não retorna nada (void)
-function log(mensagem) {
-    console.log(mensagem);
-}
+//Type Assertions
+let texto = "Teste";
+//let tamanho = texto as string;
+let tamanho = texto;
