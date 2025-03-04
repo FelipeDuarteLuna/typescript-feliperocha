@@ -10,13 +10,17 @@ type User = {
     email: string;
     password?: string;
     orders: Order[];
+    register(): string;
 }
 
 const user: User = {
     firstName: 'Felipe',
     age: 25,
     email: 'felipinho.luna@gmail.comm',
-    orders: [{productID: "9001", price: 100}]
+    orders: [{productID: "9001", price: 100}],
+    register() {
+        return "a";
+      },
 }  
 
 // Unions
@@ -30,7 +34,10 @@ const author : Author & User = {
     email: 'felipinho.luna@gmail.comm',
     password:"123456",
     orders: [{productID: "9001", price: 100}],
-    books: ["Aprendendo Typescript"]
+    books: ["Aprendendo Typescript"],
+    register() {
+        return "a";
+      },
 }              
 
 // Interfaces
