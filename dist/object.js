@@ -3,7 +3,10 @@ const user = {
     firstName: 'Felipe',
     age: 25,
     email: 'felipinho.luna@gmail.comm',
-    orders: [{ productID: "9001", price: 100 }]
+    orders: [{ productID: "9001", price: 100 }],
+    register() {
+        return "a";
+    },
 };
 const author = {
     firstName: 'Felipe',
@@ -11,7 +14,10 @@ const author = {
     email: 'felipinho.luna@gmail.comm',
     password: "123456",
     orders: [{ productID: "9001", price: 100 }],
-    books: ["Aprendendo Typescript"]
+    books: ["Aprendendo Typescript"],
+    register() {
+        return "a";
+    },
 };
 const emailUser = {
     firstName: 'Felipe',
