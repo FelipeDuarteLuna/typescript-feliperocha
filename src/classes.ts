@@ -12,8 +12,16 @@ class Person{
     sayMyName(): string{
         return this.name;
     }
-
 }
+
+// Mesma coisa que acima
+class PersonRefact {
+    constructor(
+      readonly id: number,
+      protected name: string,
+      private age: number
+    ) {}
+  }
 
 interface Iperson{
     id: number;
